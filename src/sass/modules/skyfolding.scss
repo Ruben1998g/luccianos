@@ -1,0 +1,181 @@
+
+@font-face {
+    font-family: "Calibre";
+    font-style: normal;
+    font-weight: 400;
+    src:
+         url("../fonts/Calibre-Regular.woff2") format("woff2"),
+         url("../fonts/Calibre-Regular.woff") format("woff");
+}
+
+
+@font-face {
+  font-family: "Calibre";
+  font-style: normal;
+  font-weight: 900;
+  src:
+       url("../fonts/Calibre-Black.woff2") format("woff2"),
+       url("../fonts/Calibre-Blackr.woff") format("woff");
+}
+
+
+  
+p{
+  margin: 0px;
+}
+
+
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+body,
+html{
+    font-family:'Calibre', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+button,
+input, 
+textarea{
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+input{   
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+input,
+textarea{
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  width:100%;
+  overflow-x:hidden;
+}
+
+body{
+  width:100%;
+  overflow-x:hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  box-sizing: border-box;
+  background-repeat:no-repeat;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  background-repeat:no-repeat;
+}
+
+html,
+body{
+  overflow: none;
+}
+
+/* полоса прокрутки (скроллбар) */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar{
+  width: 8px; /* ширина для вертикального скролла */
+  background-color: #EDEEF2;
+}
+
+/* ползунок скроллбара */
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb{
+  background-color: #808999;
+  border-radius: 9em;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover{
+  background-color: #13438F;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer{
+  margin-top: auto;
+}
+
+body,
+html{
+  min-height: 100vh;
+}
+
+.hidden{
+  display: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0px;
+}
+
+input, textarea, button{
+  outline: none;
+}
+
+.slide-hide{
+    opacity: 0;
+    z-index: -100;
+    transition: all 1s;
+}
+
+.hide{
+  opacity:0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.show{
+  opacity: 1;
+  transition: 0.3s;
+  pointer-events: unset;
+}
+
+.none{
+  display: none !important;
+}
+
+.ovorflow-none{
+  overflow: hidden !important;
+}

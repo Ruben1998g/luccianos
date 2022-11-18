@@ -1,0 +1,265 @@
+@keyframes updown {
+    0%{
+        transform: translateY(0px) scale(1.5);
+    }
+    50%{
+        transform: translateY(20px) scale(1.5);
+    }
+    100%{
+        transform: translateY(0px) scale(1.5);
+    }
+    
+}
+
+@keyframes showit {
+    0%{
+        opacity: 0%;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
+
+
+
+
+.ice{
+
+    @media(max-width: 1200px){
+        .ice__info{
+            display: none !important;
+        }
+    }
+    .ice__title{
+        margin-top: 81px;
+        margin-left: 107px;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 92%;
+        span{
+            font-weight: 700;
+        }
+    }
+
+    .ice__slider{
+        img{
+            width: 100%;
+        }
+
+        .ice__info{
+            
+            h5{
+                font-size: 18px;
+                font-weight: 900;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.2;
+                letter-spacing: -.5px;
+                text-transform: uppercase;
+                transition: all 1s cubic-bezier(.25,.8,.25,1);
+                transform: translateY(-10px);
+                //opacity: 0;
+                display: block;
+                color: black;
+            }
+
+            p{
+                font-size: 13px;
+                margin-top: 5px;
+                line-height: 1.31;
+                transition: all 1s cubic-bezier(.25,.8,.25,1);
+                display: block;
+                transform: translateY(-10px);
+                //opacity: 0;
+                color: black;
+            }
+        }
+    }
+
+    .ice__inner-container{
+        display: flex;
+        flex-direction: column;
+        h4{
+            margin-left: 107px;
+            font-size: 25px;
+            margin-top: 36px;
+            margin-left: 107px;
+            margin-right: 107px;
+            margin-left: auto;
+            border-top: 1px solid rgba(34,34,34,.2);
+            padding-top: 10px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .ice__inner-container--bottom{
+        margin-top: 40px;
+    }
+
+    .ice__more{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: block;
+        background: black;
+        border-radius: 100px;
+        color: #fff;
+        padding: 18px 45px;
+        cursor: pointer;
+        padding-bottom: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1.13px;
+        overflow: hidden;
+        transition: all .5s,width 1s cubic-bezier(.73,.29,0,1);
+        border: none;
+        font-family: 'Calibre',sans-serif;
+        margin-top: 70px;
+        margin-bottom: 120px;
+    }
+
+
+    @media(min-width: 1001px){
+        
+        .ice__info{
+            position: absolute;
+            display: block;
+            border-radius: 50%;
+            background: #dffff8;
+            padding: 0 40px;
+            padding-top: 140px;
+            padding-bottom: 57px;
+            text-align: center;
+            bottom: -230px;
+            display: none;
+            opacity: 0%;
+        }
+
+        .ice__slider .swiper-slide{
+            &:hover,
+            &:focus{
+                img{
+                    transform: scale(1.5);
+                    animation-name: updown;
+                    animation-duration: 7s;
+                    animation-timing-function: cubic-bezier(.25,.8,.25,1);
+                    animation-fill-mode: forwards;
+                    transition: all 1s cubic-bezier(.25,.8,.25,1);
+                    animation-iteration-count: infinite;
+                }
+                .ice__info{
+                    transform: scale(0);
+                    display: block;
+                    animation-name: showit;
+                    animation-duration: 1s;
+                    animation-fill-mode: forwards;
+                    animation-timing-function: cubic-bezier(.25,.8,.25,1);
+                }
+            }
+        }
+    }
+
+    img{
+        z-index: 2;
+        position: relative;
+        display: block;
+    }
+    
+}
+
+.ice__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.ice__slider{
+    .swiper-slide[data-swiper-slide-index="1"]{
+        .ice__info{
+            background-color: #f8ecd9 !important;
+        }
+    }
+    .swiper-slide[data-swiper-slide-index="2"]{
+        .ice__info{
+            background-color: #ffd99b !important;
+        }
+    }
+    .swiper-slide[data-swiper-slide-index="3"]{
+        .ice__info{
+            background-color: #fed8d7 !important;
+        }
+    }
+    .swiper-slide[data-swiper-slide-index="4"]{
+        .ice__info{
+            background-color: #F0B0AF !important;
+        }
+    }
+    .swiper-slide[data-swiper-slide-index="5"]{
+        .ice__info{
+            background-color: #ce9381 !important;
+        }
+    }
+    .swiper-slide[data-swiper-slide-index="6"]{
+        .ice__info{
+            background-color: #e8ab88 !important;
+        }
+    }
+    .swiper-slide[data-swiper-slide-index="7"]{
+        .ice__info{
+            background-color: #edef7c !important;
+        }
+    }
+    .swiper-slide[data-swiper-slide-index="8"]{
+        .ice__info{
+            background-color: #fdddc7 !important;
+        }
+    }
+    .swiper-slide[data-swiper-slide-index="9"]{
+        .ice__info{
+            background-color: #f8ecd9 !important;
+        }
+    }
+    .swiper-slide[data-swiper-slide-index="10"]{
+        .ice__info{
+            background-color: #e1d987 !important;
+        }
+    }
+    .swiper-slide[data-swiper-slide-index="11"]{
+        .ice__info{
+            background-color: #be8671 !important;
+        }
+    }
+    .swiper-slide[data-swiper-slide-index="12"]{
+        .ice__info{
+            background-color: #e8ab88 !important;
+        }
+    }
+}
+
+.ice__slider{
+    position: relative;
+    .swiper-button-prev,
+    .swiper-button-next{
+        margin-top: unset;
+        background: #fff;
+        color: unset;
+        box-shadow: 1px 1px 22px -7px rgb(0 0 0 / 25%);
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        &::after{
+            font-size: 14px;
+            @media(min-width: 1000px){
+                font-size: 20px;
+            }
+        }
+        @media(min-width: 1000px){
+            width: 82px;
+            height: 82px;
+        }
+        
+    }
+}
